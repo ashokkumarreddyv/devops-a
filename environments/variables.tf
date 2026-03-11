@@ -1,5 +1,5 @@
 variable "instance_type" {}
-variable "ami" {}
+variable "ami_id" {}
 variable "name" {}
 variable "vpc_cidr" {}
 variable "subnet_cidr" {}

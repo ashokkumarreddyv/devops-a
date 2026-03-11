@@ -1,5 +1,5 @@
 variable "instance_type" {}
-variable "ami" {}
+variable "ami_id" {}
 variable "subnet_id" {}
 variable "vpc_security_group_ids" {}
 

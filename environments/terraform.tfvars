@@ -1,5 +1,6 @@
 instance_type = "t2.micro"
-ami = "ami-09c813fb71547fc4f"
+ami_id = "ami-09c813fb71547fc4f"
 vpc_cidr= "10.0.0.0/16"
 subnet_cidr = "10.0.0.0/24"
 bucket_name = "aws_devops_bucket"
+name = "dev-sever"

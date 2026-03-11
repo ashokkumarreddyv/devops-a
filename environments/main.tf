@@ -7,7 +7,7 @@ module "vpc" {
 module "ec2" {
     source = "../module/ec2"
     variable "instance_type" {}
-    variable "ami" {}
+    variable "ami_id" {}
     variable "subnet_id" {}
     variable "vpc_security_group_ids" {}
     
