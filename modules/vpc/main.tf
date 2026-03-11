@@ -1,0 +1,19 @@
+resource "aws_vpc" "name" {
+    cidr_block = var.vpc_cidr
+    
+    tags = {
+        name = "vpc"
+    }
+  
+}
+
+resource "aws_subnet" "name" {
+    vpc_id = aws_vpc.main.id
+    cidr_block = var.subnet_cidr
+
+    tags = {
+      name = "public_subnet"
+    }
+    
+  
+}
