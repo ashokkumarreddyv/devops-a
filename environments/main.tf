@@ -1,22 +1,21 @@
 module "vpc" {
-    source = "../module/vpc"
-    variable "vpc_cidr" {}
-    variable "subnet_cidr" {}
+  source = "../modules/vpc"
+
+  vpc_cidr    = var.vpc_cidr
+  subnet_cidr = var.subnet_cidr
 }
 
 module "ec2" {
-    source = "../module/ec2"
-    variable "instance_type" {}
-    variable "ami_id" {}
-    variable "subnet_id" {}
-    variable "vpc_security_group_ids" {}
-    
+  source = "../modules/ec2"
 
-  
+  instance_type          = var.instance_type
+  ami_id                 = var.ami_id
+  subnet_id              = var.subnet_id
+  vpc_security_group_ids = var.vpc_security_group_ids
 }
 
 module "s3" {
-    source = "../module/S3"
-    variable "bucket_name" {}
-  
+  source = "../modules/S3"
+
+  bucket_name = var.bucket_name
 }
