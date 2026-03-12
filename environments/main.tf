@@ -11,7 +11,7 @@ module "ec2" {
   instance_type          = var.instance_type
   ami_id                 = var.ami_id
   subnet_id              = module.vpc.subnet_id
-  vpc_security_group_ids = var.vpc_security_group_ids
+  vpc_security_group_ids = [module.vpc.security_group_id]
 }
 
 # module "s3" {

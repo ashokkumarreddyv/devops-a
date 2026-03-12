@@ -17,3 +17,12 @@ resource "aws_subnet" "name" {
     
   
 }
+
+resource "aws_security_group" "ec2_sg" {
+  name   = "ec2-security-group"
+  vpc_id = aws_vpc.name.id
+
+  tags = {
+    Name = "ec2-security-group"
+  }
+}
