@@ -14,10 +14,10 @@ module "ec2" {
   vpc_security_group_ids = [module.vpc.security_group_id]
 }
 
-# module "s3" {
-#   source = "../modules/S3"
+module "s3" {
+  source = "../modules/S3"
 
-#   bucket_name = var.bucket_name
-# }
+  bucket_name = var.bucket_name
+}
 
 #
