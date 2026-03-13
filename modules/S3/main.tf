@@ -39,6 +39,6 @@ resource "aws_dynamodb_table" "terraform_lock" {
   }
 
   tags = {
-    Name = "terraform-lock-table"
+    Name = "ashok"
   }
 }
