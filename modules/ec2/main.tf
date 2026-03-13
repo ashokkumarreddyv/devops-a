@@ -6,7 +6,7 @@ resource "aws_instance" "ec2" {
     key_name = var.key_name
 
     tags = {
-      name = "dev"
+      Name = var.server_name
     }    
 
 

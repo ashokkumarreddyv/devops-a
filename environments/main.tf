@@ -15,10 +15,9 @@ module "ec2" {
   key_name = var.key_name
 }
 
-module "s3" {
-  source = "../modules/S3"
+# module "s3" {
+#   source = "../modules/S3"
 
-  bucket_name = var.bucket_name
-}
+#   bucket_name = var.bucket_name
+# }
 
-#
