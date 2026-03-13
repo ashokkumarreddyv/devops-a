@@ -31,6 +31,6 @@ jobs:
         run: terraform plan
         working-directory: environments
       
-      - name: Terraform destroy
-        run: terraform destroy -auto-approve
-        working-directory: environments
+      # - name: Terraform destroy
+      #   run: terraform destroy -auto-approve
+      #   working-directory: environments

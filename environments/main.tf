@@ -12,6 +12,7 @@ module "ec2" {
   ami_id                 = var.ami_id
   subnet_id              = module.vpc.subnet_id
   vpc_security_group_ids = [module.vpc.security_group_id]
+  key_name = var.key_name
 }
 
 module "s3" {
